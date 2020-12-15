@@ -6,6 +6,7 @@ import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
+import PersonIcon from '@material-ui/icons/Person';
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
@@ -37,7 +38,7 @@ const Header = () => {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justify="center">
-        <Avatar className={classes.avatar} src={avatar} alt="Martynas Čižas" />
+        <Avatar className={classes.avatar} icon={<PersonIcon/>} alt="Martynas Čižas" />
       </Grid>
       <Typography className={classes.title} variant="h4">
         <Typed strings={["Martynas Čižas"]} typeSpeed={10} />
@@ -54,8 +55,8 @@ const Header = () => {
         <Typography>
           <Typed
             strings={[
-              "Technologies I Use:"         ]}
-            typeSpeed={60}
+              "Technologies I Use:"]}
+            typeSpeed={100}
             backSpeed={10}
             loop
           />
@@ -63,7 +64,7 @@ const Header = () => {
         <Typography>
           <Typed
             strings={[
-              "React, Node, Express, NPM, HTML, CSS"         ]}
+              "React, Node, Express, NPM, HTML, CSS"]}
             typeSpeed={60}
             backSpeed={10}
           />

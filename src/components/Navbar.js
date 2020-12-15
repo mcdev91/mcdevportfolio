@@ -18,34 +18,34 @@ import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../avatar.png";
+import PersonIcon from '@material-ui/icons/Person';
 
 import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
-    background: "#222",
+    background: "#000000",
     margin: 0,
   },
   arrow: {
-    color: "tomato",
+    color: "lightgrey",
   },
   title: {
-    color: "tan",
+    color: "grey",
   },
   menuSliderContainer: {
-    width: 250,
-    background: "#511",
+    background: "#000000",
     height: "100%",
+    width: "100%",
   },
   avatar: {
-    display: "block",
-    margin: "0.5rem auto",
-    width: theme.spacing(13),
-    height: theme.spacing(13),
+    margin: "auto",
+    width: theme.spacing(12),
+    height: theme.spacing(12),
+    marginTop: 30
   },
   listItem: {
-    color: "tan",
+    color: "grey",
   },
 }));
 
@@ -63,7 +63,7 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
+      <Avatar className={classes.avatar} icon={<PersonIcon />} alt="Martynas Čižas" />
       <Divider />
       <List>
         {menuItems.map((item, i) => (

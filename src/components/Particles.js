@@ -5,7 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   particlesCanvas: {
     position: "fixed",
-    opacity: "0.2"
+    opacity: "0.5",
+    background: "#000000"
   },
 }));
 
@@ -18,20 +19,13 @@ const Particles = () => {
       params={{
         particles: {
           "color": {
-            "value": "#393d3a"
+            "value": "#ffffff"
           },
           number: {
-            value: 100,
+            value: 50,
             density: {
               enable: true,
               value_area: 800,
-            },
-          },
-          shape: {
-            type: "circle",
-            stroke: {
-              width: 1,
-              color: "tomato",
             },
           },
           size: {
