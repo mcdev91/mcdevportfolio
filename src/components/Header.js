@@ -54,10 +54,18 @@ const Header = () => {
         <Typography>
           <Typed
             strings={[
-              "Technologies I Use: React, Node, Express, NPM, HTML, CSS"         ]}
+              "Technologies I Use:"         ]}
             typeSpeed={60}
             backSpeed={10}
             loop
+          />
+        </Typography>
+        <Typography>
+          <Typed
+            strings={[
+              "React, Node, Express, NPM, HTML, CSS"         ]}
+            typeSpeed={60}
+            backSpeed={10}
           />
         </Typography>
       </Typography>

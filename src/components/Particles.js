@@ -18,7 +18,7 @@ const Particles = () => {
       params={{
         particles: {
           "color": {
-            "value": "#00ff36"
+            "value": "#393d3a"
           },
           number: {
             value: 100,

@@ -6,7 +6,6 @@ import Resume from "./components/Resume";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
-
 import "./App.css";
 
 function App() {
