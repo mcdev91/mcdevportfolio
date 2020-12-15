@@ -8,6 +8,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const useStyles = makeStyles({
   bottomNavContainer: {
     background: "#000000",
+    paddingBottom: 30
   },
   root: {
     "& .MuiSvgIcon-root": {
