@@ -5,7 +5,6 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../avatar.png";
 import PersonIcon from '@material-ui/icons/Person';
 
 const useStyles = makeStyles((theme) => ({
@@ -47,7 +46,7 @@ const Header = () => {
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[
-            "Frontend Developer",
+            "Full Stack Web Developer",
           ]}
           typeSpeed={100}
           backSpeed={10}
