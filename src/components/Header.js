@@ -40,7 +40,7 @@ const Header = () => {
         <Avatar className={classes.avatar} src={avatar} alt="Martynas Čižas" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["Martynas Čižas"]} typeSpeed={40} />
+        <Typed strings={["Martynas Čižas"]} typeSpeed={10} />
       </Typography>
 
       <Typography className={classes.subtitle} variant="h5">
@@ -48,10 +48,18 @@ const Header = () => {
           strings={[
             "Frontend Developer",
           ]}
-          typeSpeed={40}
-          backSpeed={50}
-          loop
+          typeSpeed={100}
+          backSpeed={10}
         />
+        <Typography>
+          <Typed
+            strings={[
+              "Technologies I Use: React, Node, Express, NPM, HTML, CSS"         ]}
+            typeSpeed={60}
+            backSpeed={10}
+            loop
+          />
+        </Typography>
       </Typography>
     </Box>
   );
