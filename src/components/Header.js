@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(15),
     height: theme.spacing(15),
     margin: theme.spacing(1),
+    background: "none"
   },
   title: {
     color: "white",
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     transform: "translate(-50%,-50%)",
     width: "100vw",
     textAlign: "center",
-    zIndex: 1,
+    zIndex: 1
   },
 }));
 

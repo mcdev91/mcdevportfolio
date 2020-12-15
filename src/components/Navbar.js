@@ -42,7 +42,8 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     width: theme.spacing(12),
     height: theme.spacing(12),
-    marginTop: 30
+    marginTop: 30,
+    background: "none",
   },
   listItem: {
     color: "grey",
