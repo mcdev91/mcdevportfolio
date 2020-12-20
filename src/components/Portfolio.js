@@ -10,12 +10,13 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import project1 from "../images/html-css-javascript-lg.jpg";
-import project2 from "../images/html-css-javascript.jpg";
+import project1 from "../images/face_detection_app.jpg";
+import project2 from "../images/react.png";
 import project3 from "../images/javascript-fullstack.jpg";
 import project4 from "../images/mern-stack.jpg";
 import project5 from "../images/react-redux.jpg";
-import project6 from "../images/react.png";
+import project6 from "../images/html-css-javascript.jpg";
+
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -30,51 +31,33 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Project 1",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
+    name: "FACE DETECTION APP",
+    description: `Full Stack React Web App with authentication and AI smart API`,
     image: project1,
   },
   {
-    name: "Project 2",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "PERN todo APP",
+    description: `Fully functional TODO app with CRUD operations`,
     image: project2,
   },
   {
-    name: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "",
+    description: ``,
     image: project3,
   },
   {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "",
+    description: ``,
     image: project4,
   },
   {
-    name: "Project 5",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "",
+    description: ``,
     image: project5,
   },
   {
-    name: "Project 6",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "",
+    description: ``,
     image: project6,
   },
 ];
@@ -92,8 +75,9 @@ const Portfolio = () => {
                 <CardMedia
                   component="img"
                   alt="Project 1"
-                  height="140"
+                  height="200"
                   image={project.image}
+                  button={project.button}
                 />
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
@@ -105,12 +89,12 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                {/* <Button size="small" color="primary">
                   Share
                 </Button>
                 <Button size="small" color="primary">
                   Live Demo
-                </Button>
+                </Button> */}
               </CardActions>
             </Card>
           </Grid>
