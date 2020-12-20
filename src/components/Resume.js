@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Typed from "react-typed";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -48,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "tomato tomato transparent transparent",
+      borderColor: "grey grey transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
@@ -63,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
-        borderColor: "transparent transparent tomato tomato",
+        borderColor: "transparent transparent grey grey",
       },
     },
   },
@@ -73,9 +74,11 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 3rem 0 auto",
     fontSize: "1.8rem",
     color: "#fff",
-    background: "tomato",
+    background: "grey",
     lineHeight: 1,
     padding: "0.5rem 1rem",
+    borderRadius: 50,
+    border: 'none',
     "&:before": {
       display: "none",
     },
@@ -92,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: "tomato",
+    color: "#ffffff",
     padding: "3rem 0",
     textTransform: "uppercase",
   },
@@ -102,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "uppercase",
   },
   body1: {
-    color: "tomato",
+    color: "grey",
   },
   subtitle1: {
     color: "tan",
@@ -114,14 +117,14 @@ const Resume = () => {
   return (
     <Box component="header" className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
-        Working Experience
+        Completed courses
       </Typography>
       <Box component="div" className={classes.timeLine}>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2013
+          2018
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -129,27 +132,44 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            web design
+            Ultimate Web Designer & Developer Course:
+            Design, Front & Back-End Programming
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Skills:
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            <Typed
+              strings={[
+                "PHOTOSHOP, HTML5, CSS3",
+              ]}
+              typeSpeed={30}
+            />
+            <br />
+            <Typed
+              strings={[
+                "JAVASCRIPT, PHP, MySQL",
+              ]}
+              typeSpeed={30}
+            />
+            <br />
+            <Typed
+              strings={[
+                "AngularJS basics",
+              ]}
+              typeSpeed={30}
+            />
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2014
+          2018
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -157,27 +177,57 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            html & css
+            Front End Advanced Course
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Skills:
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            <Typed
+              strings={[
+                "Project management fundamentals, Teamwork, Agile",
+              ]}
+              typeSpeed={30}
+            />
+            <br />
+            <Typed
+              strings={[
+                "Advanced HTML, Advanced CSS, Responsive design",
+              ]}
+              typeSpeed={30}
+            />
+            <br />
+            <Typed
+              strings={[
+                "Advanced JavaScript, Node.Js, Express.Js & NoSQL",
+              ]}
+              typeSpeed={30}
+            />
+            <br />
+            <Typed
+              strings={[
+                "JavaScript and Browser: Document, Event, Interfaces, Debugging, API, FireBase, GIT.",
+              ]}
+              typeSpeed={30}
+            />
+            <br />
+            <Typed
+              strings={[
+                "Application testing, Error handling",
+              ]}
+              typeSpeed={30}
+            />
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2015
+          2020
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -185,48 +235,46 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Fullstack Javascript
+            The Complete Web developer: zero to mastery
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Skills:
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
-          </Typography>
-        </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2017
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Django & React
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+
+            <br />
+            <Typed
+              strings={[
+                "DOM Manipulation, Javascript (including ES6/ES7/ES8/ES9/ES10/ES2020), Asynchronous JavaScript,HTTP/JSON/AJAX",
+              ]}
+              typeSpeed={30}
+            />
+            <br />
+            <Typed
+              strings={[
+                "React + Redux, Git + Github, Command Line",
+              ]}
+              typeSpeed={30}
+            />
+            <br />
+            <Typed
+              strings={[
+                "Node.js, Express.js, NPM, RESTful API Design, PostgresSQL, SQL",
+              ]}
+              typeSpeed={30}
+            />
+            <br />
+            <Typed
+              strings={[
+                "Authentication, Authorization, Scalable Infrastructure, Security, Production and Deployment",
+              ]}
+              typeSpeed={30}
+            />
+
           </Typography>
         </Box>
       </Box>

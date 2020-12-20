@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
   },
   heading: {
-    color: "tomato",
+    color: "grey",
     textAlign: "center",
     textTransform: "uppercase",
     marginBottom: "1rem",
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginTop: "1rem",
-    color: "tomato",
+    color: "grey",
     borderColor: "tan",
   },
   field: {
