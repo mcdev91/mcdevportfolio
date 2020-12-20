@@ -11,7 +11,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 import project1 from "../images/face_detection_app.jpg";
-import project2 from "../images/react.png";
+import project2 from "../images/pern_todo.png";
 import project3 from "../images/javascript-fullstack.jpg";
 import project4 from "../images/mern-stack.jpg";
 import project5 from "../images/react-redux.jpg";
