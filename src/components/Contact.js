@@ -15,21 +15,28 @@ const Contact = () => {
   }
 
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
-      <label>NAME</label>
-      <br />
-      <input type="text" name="from_name" />
-      <br />
-      <label>EMAIL</label>
-      <br />
-      <input type="email" name="reply_to" />
-      <br />
-      <label>YOUR MESSAGE</label>
-      <br />
-      <textarea name="message" />
-      <br />
-      <input type="submit" value="Send" />
-    </form>
+    <div
+      style={{
+        textAlign: 'center',
+        marginTop: 50,
+        align: 'center'
+      }}>
+      <form className="contact-form" onSubmit={sendEmail}>
+        <label>NAME</label>
+        <br />
+        <input style={{ width: 150 }} type="text" name="from_name" />
+        <br />
+        <label>EMAIL</label>
+        <br />
+        <input style={{ width: 150 }} type="email" name="reply_to" />
+        <br />
+        <label>YOUR MESSAGE</label>
+        <br />
+        <textarea style={{ width: 150, height: 150 }} name="message" />
+        <br />
+        <input type="submit" value="Send" />
+      </form>
+    </div >
   );
 }
 
