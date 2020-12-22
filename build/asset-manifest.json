@@ -1,29 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e9ea851.chunk.css",
-    "main.js": "/static/js/main.24bbc7e5.chunk.js",
-    "main.js.map": "/static/js/main.24bbc7e5.chunk.js.map",
+    "main.css": "/static/css/main.11106225.chunk.css",
+    "main.js": "/static/js/main.350e5634.chunk.js",
+    "main.js.map": "/static/js/main.350e5634.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/js/2.0b1e9572.chunk.js": "/static/js/2.0b1e9572.chunk.js",
-    "static/js/2.0b1e9572.chunk.js.map": "/static/js/2.0b1e9572.chunk.js.map",
+    "static/js/2.b1e8b41e.chunk.js": "/static/js/2.b1e8b41e.chunk.js",
+    "static/js/2.b1e8b41e.chunk.js.map": "/static/js/2.b1e8b41e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8cbb8305d998c3245c5c0929948c7567.js": "/precache-manifest.8cbb8305d998c3245c5c0929948c7567.js",
+    "precache-manifest.ac3310c9f5a005e1f3d9ecbfd5272ccf.js": "/precache-manifest.ac3310c9f5a005e1f3d9ecbfd5272ccf.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1e9ea851.chunk.css.map": "/static/css/main.1e9ea851.chunk.css.map",
-    "static/js/2.0b1e9572.chunk.js.LICENSE.txt": "/static/js/2.0b1e9572.chunk.js.LICENSE.txt",
-    "static/media/avatar.png": "/static/media/avatar.7c8e5f50.png",
-    "static/media/html-css-javascript-lg.jpg": "/static/media/html-css-javascript-lg.54fd4234.jpg",
+    "static/css/main.11106225.chunk.css.map": "/static/css/main.11106225.chunk.css.map",
+    "static/js/2.b1e8b41e.chunk.js.LICENSE.txt": "/static/js/2.b1e8b41e.chunk.js.LICENSE.txt",
+    "static/media/face_detection_app.jpg": "/static/media/face_detection_app.45ff6eda.jpg",
     "static/media/html-css-javascript.jpg": "/static/media/html-css-javascript.2c7701aa.jpg",
     "static/media/javascript-fullstack.jpg": "/static/media/javascript-fullstack.730958a2.jpg",
     "static/media/mern-stack.jpg": "/static/media/mern-stack.90616a5d.jpg",
-    "static/media/react-redux.jpg": "/static/media/react-redux.a8b012a0.jpg",
-    "static/media/react.png": "/static/media/react.f370c1e0.png"
+    "static/media/pern_todo.png": "/static/media/pern_todo.9954cf31.png",
+    "static/media/react-redux.jpg": "/static/media/react-redux.a8b012a0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
-    "static/js/2.0b1e9572.chunk.js",
-    "static/css/main.1e9ea851.chunk.css",
-    "static/js/main.24bbc7e5.chunk.js"
+    "static/js/2.b1e8b41e.chunk.js",
+    "static/css/main.11106225.chunk.css",
+    "static/js/main.350e5634.chunk.js"
   ]
 }
