@@ -19,7 +19,6 @@ import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
 import PersonIcon from '@material-ui/icons/Person';
-
 import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
