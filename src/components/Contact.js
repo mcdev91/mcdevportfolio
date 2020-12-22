@@ -14,12 +14,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(4),
     display: 'flex',
     flexDirection: 'column',
+    textAlign: 'center',
     alignItems: 'center',
   },
   form: {
     width: 200,
     marginTop: theme.spacing(1),
   },
+  button: {
+    marginTop: 15,
+  }
 }));
 
 export default function Contact() {
@@ -75,12 +79,12 @@ export default function Contact() {
           name="html_message"
           autoComplete="text"
           autoFocus
-          placeholder="Your Message"
+          placeholder="Your Message *"
           multiline
           rows={2}
           rowsMax={4}
         />
-        <Collapse in={open}>
+        <Collapse in={open} className={classes.button}>
           <Alert
             action={
               <IconButton
