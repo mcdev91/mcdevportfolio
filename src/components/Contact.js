@@ -19,14 +19,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 50,
   },
   form: {
-    width: 200,
-    marginTop: theme.spacing(1),
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
+    width: "50vw",
+    textAlign: "center",
+    zIndex: 99
   },
   button: {
     marginTop: 25,
-  },
-  input: {
-    backgroundColor: 'grey'
   },
 }));
 
@@ -45,90 +47,84 @@ export default function Contact() {
       });
   }
   return (
-
-    <React.Fragment>
-      <Particles />
-      <div className={classes.paper}>
-        <Typography variant="h6" component="h6" gutterBottom>
-          HIRE ME
-            </Typography>
-        <form onSubmit={sendEmail} className={classes.form} noValidate>
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required={true}
-            fullWidth
-            id="name"
-            label="Your Name"
-            name="from_name"
-            autoComplete="name"
-            autoFocus
-            InputProps={{
-              className: classes.input,
-            }}
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required={true}
-            fullWidth
-            id="email"
-            label="Email Address"
-            name="from_email"
-            autoComplete="email"
-            autoFocus
-            type='email'
-            InputProps={{
-              className: classes.input,
-            }}
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required={true}
-            fullWidth
-            id="text"
-            name="html_message"
-            autoComplete="text"
-            autoFocus
-            placeholder="Your Message *"
-            multiline
-            rows={2}
-            rowsMax={4}
-            InputProps={{
-              className: classes.input,
-            }}
-          />
-          <Collapse in={open} className={classes.button}>
-            <Alert
-              action={
-                <IconButton
-                  aria-label="close"
-                  color="inherit"
-                  size="small"
-                  onClick={() => {
-                    setOpen(false);
-                  }}
-                >
-                  <CloseIcon fontSize="inherit" />
-                </IconButton>
-              }
-            >
-              See you soon !
-                    </Alert>
-          </Collapse>
-          <Button
-            type="submit"
-            variant="contained"
-            color="default"
-            onClick={() => {
-              setOpen(true);
-            }}
+    <div className={classes.paper}>
+      <form onSubmit={sendEmail} className={classes.form} noValidate>
+        <Typography>Hire Me</Typography>
+        <TextField
+          variant="outlined"
+          margin="normal"
+          required={true}
+          fullWidth
+          id="name"
+          label="Your Name"
+          name="from_name"
+          autoComplete="name"
+          autoFocus
+          InputProps={{
+            className: classes.input,
+          }}
+        />
+        <TextField
+          variant="outlined"
+          margin="normal"
+          required={true}
+          fullWidth
+          id="email"
+          label="Email Address"
+          name="from_email"
+          autoComplete="email"
+          autoFocus
+          type='email'
+          InputProps={{
+            className: classes.input,
+          }}
+        />
+        <TextField
+          variant="outlined"
+          margin="normal"
+          required={true}
+          fullWidth
+          id="text"
+          name="html_message"
+          autoComplete="text"
+          autoFocus
+          placeholder="Your Message *"
+          multiline
+          rows={2}
+          rowsMax={4}
+          InputProps={{
+            className: classes.input,
+          }}
+        />
+        <Collapse in={open} className={classes.button}>
+          <Alert
+            action={
+              <IconButton
+                aria-label="close"
+                color="inherit"
+                size="small"
+                onClick={() => {
+                  setOpen(false);
+                }}
+              >
+                <CloseIcon fontSize="inherit" />
+              </IconButton>
+            }
           >
-            Send Mail
+            See you soon !
+                    </Alert>
+        </Collapse>
+        <Button
+          type="submit"
+          variant="contained"
+          color="default"
+          onClick={() => {
+            setOpen(true);
+          }}
+        >
+          Send Mail
                 </Button>
-        </form>
-      </div>
-    </React.Fragment>
+      </form>
+    </div>
   );
 }
