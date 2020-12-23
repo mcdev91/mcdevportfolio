@@ -6,7 +6,8 @@ import Typed from "react-typed";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#ebebeb",
+    marginTop: 56
   },
   timeLine: {
     position: "relative",
@@ -35,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   timeLineItem: {
     padding: "1rem",
-    borderBottom: "2px solid tan",
+    borderBottom: "2px solid grey",
     position: "relative",
     margin: "1rem 3rem 1rem 1rem",
     clear: "both",
@@ -73,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
     fontSize: "1.8rem",
-    color: "#fff",
+    color: "tan",
     background: "grey",
     lineHeight: 1,
     padding: "0.5rem 1rem",
@@ -95,20 +96,20 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: "#ffffff",
+    color: "#000000",
     padding: "3rem 0",
     textTransform: "uppercase",
   },
   subHeading: {
-    color: "#fff",
+    color: "#000000",
     padding: 0,
     textTransform: "uppercase",
   },
   body1: {
-    color: "grey",
+    color: "#000000",
   },
   subtitle1: {
-    color: "tan",
+    color: "#000000",
   },
 }));
 

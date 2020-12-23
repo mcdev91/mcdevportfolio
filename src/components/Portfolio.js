@@ -21,7 +21,8 @@ import project6 from "../images/html-css-javascript.jpg";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
-    height: "100%",
+    height: "100vh",
+    marginTop: 56
   },
   cardContainer: {
     maxWidth: 345,

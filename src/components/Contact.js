@@ -8,15 +8,20 @@ import IconButton from '@material-ui/core/IconButton';
 import Collapse from '@material-ui/core/Collapse';
 import CloseIcon from '@material-ui/icons/Close';
 import { Alert } from '@material-ui/lab';
-import Particles from "./Particles";
 
 const useStyles = makeStyles((theme) => ({
+  mainDiv: {
+    height: "100vh",
+    top: 0,
+    flexDirection: "column",
+    backgroundColor: '#ededed',
+  },
   paper: {
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'center',
     alignItems: 'center',
-    marginTop: 50,
+    width: "100%",
   },
   form: {
     position: "absolute",
@@ -25,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
     transform: "translate(-50%,-50%)",
     width: "50vw",
     textAlign: "center",
-    zIndex: 99
   },
   button: {
     marginTop: 25,
@@ -47,84 +51,86 @@ export default function Contact() {
       });
   }
   return (
-    <div className={classes.paper}>
-      <form onSubmit={sendEmail} className={classes.form} noValidate>
-        <Typography>Hire Me</Typography>
-        <TextField
-          variant="outlined"
-          margin="normal"
-          required={true}
-          fullWidth
-          id="name"
-          label="Your Name"
-          name="from_name"
-          autoComplete="name"
-          autoFocus
-          InputProps={{
-            className: classes.input,
-          }}
-        />
-        <TextField
-          variant="outlined"
-          margin="normal"
-          required={true}
-          fullWidth
-          id="email"
-          label="Email Address"
-          name="from_email"
-          autoComplete="email"
-          autoFocus
-          type='email'
-          InputProps={{
-            className: classes.input,
-          }}
-        />
-        <TextField
-          variant="outlined"
-          margin="normal"
-          required={true}
-          fullWidth
-          id="text"
-          name="html_message"
-          autoComplete="text"
-          autoFocus
-          placeholder="Your Message *"
-          multiline
-          rows={2}
-          rowsMax={4}
-          InputProps={{
-            className: classes.input,
-          }}
-        />
-        <Collapse in={open} className={classes.button}>
-          <Alert
-            action={
-              <IconButton
-                aria-label="close"
-                color="inherit"
-                size="small"
-                onClick={() => {
-                  setOpen(false);
-                }}
-              >
-                <CloseIcon fontSize="inherit" />
-              </IconButton>
-            }
-          >
-            See you soon !
+    <div className={classes.mainDiv}>
+      <div className={classes.paper}>
+        <form onSubmit={sendEmail} className={classes.form} noValidate>
+          <Typography>Contact Me</Typography>
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required={true}
+            fullWidth
+            id="name"
+            label="Your Name"
+            name="from_name"
+            autoComplete="name"
+            autoFocus
+            InputProps={{
+              className: classes.input,
+            }}
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required={true}
+            fullWidth
+            id="email"
+            label="Email Address"
+            name="from_email"
+            autoComplete="email"
+            autoFocus
+            type='email'
+            InputProps={{
+              className: classes.input,
+            }}
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required={true}
+            fullWidth
+            id="text"
+            name="html_message"
+            autoComplete="text"
+            autoFocus
+            placeholder="Your Message *"
+            multiline
+            rows={2}
+            rowsMax={4}
+            InputProps={{
+              className: classes.input,
+            }}
+          />
+          <Collapse in={open} className={classes.button}>
+            <Alert
+              action={
+                <IconButton
+                  aria-label="close"
+                  color="inherit"
+                  size="small"
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                >
+                  <CloseIcon fontSize="inherit" />
+                </IconButton>
+              }
+            >
+              See you soon !
                     </Alert>
-        </Collapse>
-        <Button
-          type="submit"
-          variant="contained"
-          color="default"
-          onClick={() => {
-            setOpen(true);
-          }}
-        >
-          Send Mail
+          </Collapse>
+          <Button
+            type="submit"
+            variant="contained"
+            color="default"
+            onClick={() => {
+              setOpen(true);
+            }}
+          >
+            Send Me Email
                 </Button>
-      </form>
+        </form>
+      </div>
     </div>
   );
 }
