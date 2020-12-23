@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   particlesCanvas: {
     position: "fixed",
     opacity: "0.5",
-    background: "black"
+    background: "##42f59e"
   },
 }));
 
@@ -39,7 +39,7 @@ const Particles = () => {
             },
           },
           opacity: {
-            value: 0.5,
+            value: 1,
             random: true,
             anim: {
               enable: true,

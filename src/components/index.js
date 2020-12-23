@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Header />
-      <Particles />
+      <Particles/>
     </React.Fragment>
   );
 };
