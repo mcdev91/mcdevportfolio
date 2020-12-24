@@ -16,6 +16,7 @@ import ArrowBack from "@material-ui/icons/ArrowBack";
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
+import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
 import PersonIcon from '@material-ui/icons/Person';
@@ -54,6 +55,7 @@ const menuItems = [
   { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
   { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
   { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
+  { listIcon: <PictureAsPdfIcon/>, listText: "Full Resume", listPath: "/fullresume"},
 ];
 
 const Navbar = () => {
