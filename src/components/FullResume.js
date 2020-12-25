@@ -26,10 +26,11 @@ export default class App extends Component {
 
                 <div>
                     <Document
+                
                         file="/mc.pdf"
                         onLoadSuccess={this.onDocumentLoadSuccess}
                     >
-                        <Page pageNumber={pageNumber} width={600} />
+                        <Page pageNumber={pageNumber} />
                     </Document>
                 </div>
 
