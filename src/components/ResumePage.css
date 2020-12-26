@@ -3,15 +3,22 @@
     margin-top: 56px;
     width: 100% !important;
     height: 100% !important;
+    position: relative;
 }
 
 #downloadLink {
-    text-decoration: none;
     text-align: center;
     display: block;
-    font-size: 40px;
+    font-size: 25px;
     color: black;
-    height: 10px;
+    height: 5px;
+    margin-top: 90px;
+    text-transform: uppercase;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
 }
 
 /* #ResumeContainer {
