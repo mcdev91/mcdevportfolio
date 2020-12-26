@@ -1,8 +1,8 @@
 .react-pdf__Page__canvas {
     margin: 0 auto;
     margin-top: 56px;
-    width: 70% !important;
-    height: 70% !important;
+    width: 90% !important;
+    height: 90% !important;
 }
 
 /* #ResumeContainer {
