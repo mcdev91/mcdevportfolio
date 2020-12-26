@@ -19,14 +19,19 @@ export default class FullResume extends Component {
         const { pageNumber } = this.state;
 
         return (
-            <Document
-                id="docComponent"
-                file="/mc.pdf"
-                onLoadSuccess={this.onDocumentLoadSuccess}
-            >
-                <Page pageNumber={pageNumber} />
-                <Page pageNumber={pageNumber + 1} />
-            </Document>
+            <div>
+                <Document
+                    id="docComponent"
+                    file="/mc.pdf"
+                    onLoadSuccess={this.onDocumentLoadSuccess}
+                >
+                    <Page pageNumber={pageNumber} />
+                    <Page pageNumber={pageNumber + 1} />
+                </Document>
+                <div id="donloadLink">
+                    <a href="/mc.pdf" download>download resume PDF</a>
+                </div>
+            </div>
         );
     }
 }
