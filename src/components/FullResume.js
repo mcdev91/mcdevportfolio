@@ -25,11 +25,11 @@ export default class FullResume extends Component {
                     file="/mc.pdf"
                     onLoadSuccess={this.onDocumentLoadSuccess}
                 >
+                    <Page pageNumber={pageNumber} />
+                    <Page pageNumber={pageNumber + 1} />
                     <div id="downloadLink">
                         <a class="link" href="/mc.pdf" download>DOWNLOAD PDF</a>
                     </div>
-                    <Page pageNumber={pageNumber} />
-                    <Page pageNumber={pageNumber + 1} />
                 </Document>
             </div>
         );
