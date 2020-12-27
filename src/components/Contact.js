@@ -34,6 +34,10 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginTop: 25,
   },
+  contactTag: {
+    color: "#000000",
+    fontSize: 50,
+  }
 }));
 
 export default function Contact() {
@@ -54,7 +58,7 @@ export default function Contact() {
     <div className={classes.mainDiv}>
       <div className={classes.paper}>
         <form onSubmit={sendEmail} className={classes.form} noValidate>
-          <Typography>Contact Me</Typography>
+          <Typography className={classes.contactTag}>Contact</Typography>
           <TextField
             variant="outlined"
             margin="normal"
@@ -127,7 +131,7 @@ export default function Contact() {
               setOpen(true);
             }}
           >
-            Send Me Email
+            Send Email
                 </Button>
         </form>
       </div>
