@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./ResumePage.css";
 import { Document, Page, pdfjs } from "react-pdf";
-import GetAppIcon from '@material-ui/icons/GetApp';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default class FullResume extends Component {
@@ -26,11 +25,11 @@ export default class FullResume extends Component {
                     file="/mc.pdf"
                     onLoadSuccess={this.onDocumentLoadSuccess}
                 >
+                    <div id="downloadLink">
+                        <a class="link" href="/mc.pdf" download>DOWNLOAD PDF</a>
+                    </div>
                     <Page pageNumber={pageNumber} />
                     <Page pageNumber={pageNumber + 1} />
-                    <div id="downloadLink">
-                        <a class="link" href="/mc.pdf" download><GetAppIcon/></a>
-                    </div>
                 </Document>
             </div>
         );
