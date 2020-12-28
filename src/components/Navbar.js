@@ -11,8 +11,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
-import Typography from "@material-ui/core/Typography";
-import ArrowBack from "@material-ui/icons/ArrowBack";
+import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
@@ -27,11 +26,17 @@ const useStyles = makeStyles((theme) => ({
     background: "#000000",
     margin: 0,
   },
-  arrow: {
-    color: "lightgrey",
-  },
+
+ arrow: {
+      fill: "#dedede",
+      fontSize: 25,
+      "&:hover": {
+        fill: "white",
+      },
+    },
+
   title: {
-    color: "grey",
+    color: "white",
   },
   menuSliderContainer: {
     background: "#000000",
@@ -46,16 +51,20 @@ const useStyles = makeStyles((theme) => ({
     background: "none",
   },
   listItem: {
-    color: "grey",
+    color: "#dedede",
+    fontSize: 25,
+    "&:hover": {
+      color: "white",
+    },
   },
 }));
 
 const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/" },
+  { listIcon: <Apps />, listText: "Projects", listPath: "/projects" },
   { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
-  { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
-  { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
-  { listIcon: <PictureAsPdfIcon/>, listText: "Full Resume", listPath: "/fullresume"},
+  { listIcon: <PictureAsPdfIcon />, listText: "Full Resume", listPath: "/fullresume" },
+  { listIcon: <ContactMail />, listText: "Hire Me", listPath: "/contact" },
 ];
 
 const Navbar = () => {
@@ -90,14 +99,11 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <Box component="nav">
-        <AppBar position="fixed" className={classes.appbar}> 
+        <AppBar position="fixed" className={classes.appbar}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
-              <ArrowBack className={classes.arrow} />
+              <MenuIcon className={classes.arrow} />
             </IconButton>
-            <Typography variant="h5" className={classes.title}>
-              Portfolio
-            </Typography>
           </Toolbar>
         </AppBar>
       </Box>

@@ -13,9 +13,10 @@ const useStyles = makeStyles({
   },
   root: {
     "& .MuiSvgIcon-root": {
-      fill: "grey",
+      fill: "#dedede",
       "&:hover": {
-        fontSize: "1.9rem",
+        fontSize: "2rem",
+        fill: "white"
       },
     },
   },
@@ -23,7 +24,6 @@ const useStyles = makeStyles({
 
 const Footer = () => {
   const classes = useStyles();
-
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
       <BottomNavigationAction icon={<LinkedInIcon />} className={classes.root} href="https://www.linkedin.com/in/martynas-%C4%8D-3a000355/" target="_blank" />

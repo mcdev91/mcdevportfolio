@@ -6,7 +6,7 @@ import Typed from "react-typed";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#ebebeb",
+    background: "#dedede",
     marginTop: 56
   },
   timeLine: {
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       height: "100%",
-      border: "1px solid tan",
+      border: "1px solid grey",
       right: "40px",
       top: 0,
     },
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n)": {
         float: "right",
         margin: "1rem",
-        borderColor: "tan",
+        borderColor: "grey",
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
     fontSize: "1.8rem",
-    color: "tan",
+    color: "#dedede",
     background: "grey",
     lineHeight: 1,
     padding: "0.5rem 1rem",

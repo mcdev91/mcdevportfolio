@@ -7,20 +7,14 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-// import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-
 import project1 from "../images/face_detection_app.jpg";
 import project2 from "../images/pern_todo.png";
-import project3 from "../images/javascript-fullstack.jpg";
-import project4 from "../images/mern-stack.jpg";
-import project5 from "../images/react-redux.jpg";
-import project6 from "../images/html-css-javascript.jpg";
 
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#dedede",
     height: "100vh",
     marginTop: 56
   },
@@ -41,29 +35,9 @@ const projects = [
     description: `Fully functional TODO app with CRUD operations`,
     image: project2,
   },
-  {
-    name: "",
-    description: ``,
-    image: project3,
-  },
-  {
-    name: "",
-    description: ``,
-    image: project4,
-  },
-  {
-    name: "",
-    description: ``,
-    image: project5,
-  },
-  {
-    name: "",
-    description: ``,
-    image: project6,
-  },
 ];
 
-const Portfolio = () => {
+const Projects = () => {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.mainContainer}>
@@ -90,12 +64,6 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                {/* <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button> */}
               </CardActions>
             </Card>
           </Grid>
@@ -105,4 +73,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

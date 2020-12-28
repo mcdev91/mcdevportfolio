@@ -9,12 +9,24 @@ import Collapse from '@material-ui/core/Collapse';
 import CloseIcon from '@material-ui/icons/Close';
 import { Alert } from '@material-ui/lab';
 
+const button = {
+  background: "black",
+  borderRadius: 3,
+  border: 0,
+  color: '#dedede',
+  height: 50,
+  fontSize: 15,
+  padding: '0 20px',
+  boxShadow: '0 0px 5px 5px rgba(0, 0, 0)',
+  borderRadius: 50
+};
+
 const useStyles = makeStyles((theme) => ({
   mainDiv: {
     height: "100vh",
     top: 0,
     flexDirection: "column",
-    backgroundColor: '#ededed',
+    backgroundColor: '#dedede',
   },
   paper: {
     display: 'flex',
@@ -36,8 +48,9 @@ const useStyles = makeStyles((theme) => ({
   },
   contactTag: {
     color: "#000000",
-    fontSize: 50,
-  }
+    fontSize: 30,
+    textTransform: "uppercase"
+  },
 }));
 
 export default function Contact() {
@@ -124,6 +137,7 @@ export default function Contact() {
                     </Alert>
           </Collapse>
           <Button
+            style={button}
             type="submit"
             variant="contained"
             color="default"

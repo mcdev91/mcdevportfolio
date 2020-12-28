@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
   },
   subtitle: {
-    color: "grey",
+    color: "#dedede",
     textTransform: "uppercase",
   },
   typedContainer: {
@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justify="center">
-        <Avatar className={classes.avatar} icon={<PersonIcon/>} alt="Martynas Čižas" />
+        <Avatar className={classes.avatar} icon={<PersonIcon />} alt="Martynas Čižas" />
       </Grid>
       <Typography className={classes.title} variant="h4">
         <Typed strings={["Martynas Čižas"]} typeSpeed={10} />
@@ -58,7 +58,6 @@ const Header = () => {
               "Technologies I Use:"]}
             typeSpeed={100}
             backSpeed={10}
-            loop
           />
         </Typography>
         <Typography>
