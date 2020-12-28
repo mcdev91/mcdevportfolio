@@ -10,28 +10,21 @@ export default class FullResume extends Component {
         this.setState({ numPages });
     };
 
-    // goToPrevPage = () =>
-    //     this.setState(state => ({ pageNumber: state.pageNumber - 1 }));
-    // goToNextPage = () =>
-    //     this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
-
     render() {
         const { pageNumber } = this.state;
 
         return (
-            <div>
-                <Document
-                    id="docComponent"
-                    file="/mc.pdf"
-                    onLoadSuccess={this.onDocumentLoadSuccess}
-                >
-                    <Page pageNumber={pageNumber} />
-                    <Page pageNumber={pageNumber + 1} />
-                    <div id="downloadLink">
-                        <a class="link" href="/mc.pdf" download>DOWNLOAD PDF</a>
-                    </div>
-                </Document>
-            </div>
+            <Document
+                id="docComponent"
+                file="/mc.pdf"
+                onLoadSuccess={this.onDocumentLoadSuccess}
+            >
+                <Page pageNumber={pageNumber} />
+                <Page pageNumber={pageNumber + 1} />
+                <div id="downloadLink">
+                    <a className="link" href="/mc.pdf" download>DOWNLOAD PDF</a>
+                </div>
+            </Document>
         );
     }
 }

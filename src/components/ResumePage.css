@@ -1,9 +1,16 @@
+.react-pdf__Document {
+    margin-top: 56px;
+}
+
 .react-pdf__Page__canvas {
     margin: 0 auto;
-    margin-top: 56px;
     width: 95% !important;
     height: 95% !important;
     position: relative;
+}
+
+.react-pdf__Page__textContent {
+    display: none;
 }
 
 #downloadLink {
@@ -19,6 +26,7 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
 .MuiSvgIcon-root {
     height: 200px;
     width: 200px;
@@ -27,6 +35,11 @@
 .react-pdf__Document {
     background-color: rgb(0, 0, 0);
 }
+
+/* html, body, #react-app {
+    margin: 0;
+    height: 100%;
+} */
 
 /* #ResumeContainer {
     margin:auto;
