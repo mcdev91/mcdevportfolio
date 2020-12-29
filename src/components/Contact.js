@@ -11,7 +11,6 @@ import { Alert } from '@material-ui/lab';
 
 const button = {
   background: "black",
-  borderRadius: 3,
   border: 0,
   color: '#dedede',
   height: 50,

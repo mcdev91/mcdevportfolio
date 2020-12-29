@@ -8,8 +8,9 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
+import Link from '@material-ui/core/Link';
 import project1 from "../images/face_detection_app.jpg";
-import project2 from "../images/pern_todo.png";
+import project2 from "../images/pern_todo.jpg";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -27,13 +28,15 @@ const useStyles = makeStyles((theme) => ({
 const projects = [
   {
     name: "FACE DETECTION APP",
-    description: `Full Stack React Web App with authentication and AI smart API`,
+    description: `Authentication & Integrated Face Detection API <React, Express, Node, Postgres>`,
     image: project1,
+    pageUrl: 'https://findface-ai.herokuapp.com/',
   },
   {
     name: "PERN todo APP",
-    description: `Fully functional TODO app with CRUD operations`,
+    description: `All CRUD operation used. <React, Express, Node, Postgres> //now on development {styles, etc.}`,
     image: project2,
+    pageUrl: 'https://mcdevtodo.herokuapp.com/',
   },
 ];
 
@@ -52,7 +55,6 @@ const Projects = () => {
                   alt="Project 1"
                   height="200"
                   image={project.image}
-                  button={project.button}
                 />
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
@@ -64,6 +66,13 @@ const Projects = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
+                <Link
+                  href={project.pageUrl}
+                  variant="body2"
+                  color="textSecondary"
+                  target="_blank">
+                  Live
+                </Link>
               </CardActions>
             </Card>
           </Grid>
