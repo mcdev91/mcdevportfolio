@@ -1,11 +1,11 @@
 .react-pdf__Document {
-    margin-top: 56px;
+    margin-top: 0px;
 }
 
 .react-pdf__Page__canvas {
     margin: 0 auto;
-    width: 95% !important;
-    height: 95% !important;
+    width: 80% !important;
+    height: 80% !important;
     position: relative;
 }
 
@@ -19,7 +19,6 @@
     font-size: 25px;
     height: 50px;
     width: 100%;
-    margin-top: 15px;
 }
 
 .link {

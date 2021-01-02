@@ -15,7 +15,6 @@ import project2 from "../images/pern_todo.jpg";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#dedede",
     height: "100vh",
     marginTop: 56
   },
@@ -34,7 +33,7 @@ const projects = [
   },
   {
     name: "PERN todo APP",
-    description: `All CRUD operation used. <React, Express, Node, Postgres> //now on development {styles, etc.}`,
+    description: `All CRUD operations used. <React, Express, Node, Postgres> <on development>`,
     image: project2,
     pageUrl: 'https://mcdevtodo.herokuapp.com/',
   },
