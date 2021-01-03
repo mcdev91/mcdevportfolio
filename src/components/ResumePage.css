@@ -1,5 +1,6 @@
 .react-pdf__Document {
     margin-top: 56px;
+    height: 100vh;
 }
 
 .react-pdf__Page__canvas {
