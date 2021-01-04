@@ -21,7 +21,7 @@ export default class FullResume extends Component {
             >
                 <Page pageNumber={pageNumber} />
                 <div id="downloadLink">
-                    <a className="link" href="././public/mc.pdf" download>DOWNLOAD PDF</a>
+                    <a className="link" href="././public/mc1.pdf" download>DOWNLOAD PDF</a>
                 </div>
             </Document>
         );
