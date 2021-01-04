@@ -1,7 +1,6 @@
 .react-pdf__Document {
-    margin-top: 56px;
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 106px;
 }
 
 .react-pdf__Page__canvas {
@@ -26,6 +25,7 @@
     height: 50px;
     width: 100%;
     background: black;
+    padding-top: 8px;
 }
 
 .link {
@@ -40,4 +40,5 @@
 
 .react-pdf__Document {
     background-color: rgb(0, 0, 0);
+    height: 100%;
 }
