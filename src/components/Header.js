@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     zIndex: 1,
     height: 320,
-},
+  },
 }));
 
 const Header = () => {
@@ -37,7 +37,10 @@ const Header = () => {
       <Grid container justify="center">
         <Avatar className={classes.avatar} src={Me} alt="Martynas Čižas" />
       </Grid>
-      <Typist className={classes.intro}>
+      <Typist
+        className={classes.intro}
+        avgTypingDelay={50}
+      >
         <span > Hi, I am Martynas Čižas</span>
         <Typist.Backspace count={23} delay={100} speed={10} />
         <span>Full Stack Web Developer</span>
