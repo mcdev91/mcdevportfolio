@@ -5,13 +5,13 @@ import Box from "@material-ui/core/Box";
 import Typist from 'react-typist';
 import { makeStyles } from "@material-ui/core/styles";
 import Me from '../images/me.png';
-
+import './HeaderCss.css';
 const useStyles = makeStyles((theme) => ({
   avatar: {
     width: theme.spacing(20),
     height: theme.spacing(20),
     margin: theme.spacing(1),
-    background: "none"
+    background: "none",
   },
   intro: {
     color: "#dedede",
@@ -50,7 +50,6 @@ const Header = () => {
       {/* <Typography className={classes.title} variant="h4">
         <Typed strings={["Martynas Čižas"]} typeSpeed={10} />
       </Typography>
-
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[

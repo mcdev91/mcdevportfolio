@@ -19,10 +19,13 @@ const Particles = () => {
       params={{
         particles: {
           "color": {
-            "value": "#dedede"
+            "value": "#22ff00"
+          },
+          shape: {
+            type: ''
           },
           number: {
-            value: 30,
+            value: 50,
             density: {
               enable: true,
               value_area: 800,
@@ -33,7 +36,7 @@ const Particles = () => {
             random: true,
             anim: {
               enable: false,
-              speed: 10,
+              speed: 100,
               size_min: 0,
               sync: true,
             },
