@@ -1,25 +1,21 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import Typed from "react-typed";
+import Typist from 'react-typist';
 import { makeStyles } from "@material-ui/core/styles";
-import PersonIcon from '@material-ui/icons/Person';
+import Me from '../images/me.png';
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(20),
+    height: theme.spacing(20),
     margin: theme.spacing(1),
     background: "none"
   },
-  title: {
-    color: "white",
-  },
-  subtitle: {
+  intro: {
     color: "#dedede",
-    textTransform: "uppercase",
+    fontSize: 25
   },
   typedContainer: {
     position: "absolute",
@@ -38,9 +34,20 @@ const Header = () => {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justify="center">
-        <Avatar className={classes.avatar} icon={<PersonIcon />} alt="Martynas Čižas" />
+        <Avatar className={classes.avatar} src={Me} alt="Martynas Čižas" />
       </Grid>
-      <Typography className={classes.title} variant="h4">
+      <Typist className={classes.intro}>
+        <span > Hi, I am Martynas Čižas</span>
+        <Typist.Backspace count={23} delay={100} speed={10} />
+        <span>Full Stack Web Developer</span>
+        <Typist.Delay ms={500} />
+        <br />
+        <span>Technologies I Use:</span>
+        <Typist.Delay ms={500} />
+        <br />
+        <span>React, Node, Express, NPM</span>
+      </Typist>
+      {/* <Typography className={classes.title} variant="h4">
         <Typed strings={["Martynas Čižas"]} typeSpeed={10} />
       </Typography>
 
@@ -63,12 +70,12 @@ const Header = () => {
         <Typography>
           <Typed
             strings={[
-              "React, Node, Express, NPM, HTML, CSS"]}
+              "React, Node, Express"]}
             typeSpeed={60}
             backSpeed={10}
           />
         </Typography>
-      </Typography>
+      </Typography> */}
     </Box>
   );
 };

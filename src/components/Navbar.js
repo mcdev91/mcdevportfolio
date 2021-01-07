@@ -18,7 +18,7 @@ import Apps from "@material-ui/icons/Apps";
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import PersonIcon from '@material-ui/icons/Person';
+import Me from '../images/me.png';
 import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
@@ -74,7 +74,7 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      <Avatar className={classes.avatar} icon={<PersonIcon />} alt="Martynas Čižas" />
+      <Avatar className={classes.avatar} src={Me} alt="Martynas Čižas" />
       <Divider />
       <List>
         {menuItems.map((item, i) => (
