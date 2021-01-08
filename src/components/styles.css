@@ -1,4 +1,4 @@
-/* resume page */
+/* full resume page */
 
 .react-pdf__Document {
     height: 100vh;
@@ -31,8 +31,8 @@
     color: black;
 }
 
-.link:hover{
-text-decoration: underline;
+.link:hover {
+    text-decoration: underline;
 }
 
 .MuiSvgIcon-root {
@@ -45,7 +45,7 @@ text-decoration: underline;
         height: 100vh;
         padding-top: 156px;
     }
-  }
+}
 
 .react-pdf__Document {
     background-color: #dedede;

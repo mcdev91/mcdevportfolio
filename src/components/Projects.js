@@ -16,7 +16,7 @@ import project2 from "../images/pern_todo.jpg";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     height: "100vh",
-    marginTop: 56
+    marginTop: 56,
   },
   cardContainer: {
     maxWidth: 345,

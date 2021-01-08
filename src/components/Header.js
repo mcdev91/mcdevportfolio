@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
   },
   intro: {
     color: "#dedede",
-    fontSize: 25
+    fontSize: 25,
+    userSelect: "none"
   },
   typedContainer: {
     position: "absolute",
@@ -49,7 +50,7 @@ const Header = () => {
         <span>Technologies I Use:</span>
         <Typist.Delay ms={500} />
         <br />
-        <span>React, Node, Express, PostgreSQL, NPM, Git, SPA</span>
+        <span>React, Node, Express, PostgreSQL, NPM, SPA, Git</span>
       </Typist>
     </Box>
   );

@@ -2,11 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import Typed from "react-typed";
+import Typist from 'react-typist';
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#dedede",
+    background: "#000000",
     marginTop: 56
   },
   timeLine: {
@@ -17,9 +17,10 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       height: "100%",
-      border: "1px solid grey",
+      border: "1px solid #dedede",
       right: "40px",
       top: 0,
+      backgroundColor: "#dedede"
     },
     "&:after": {
       content: "''",
@@ -36,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   timeLineItem: {
     padding: "1rem",
-    borderBottom: "2px solid grey",
+    borderBottom: "3px solid #dedede",
     position: "relative",
     margin: "1rem 3rem 1rem 1rem",
     clear: "both",
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "grey grey transparent transparent",
+      borderColor: "#dedede #dedede transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
@@ -60,12 +61,12 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n)": {
         float: "right",
         margin: "1rem",
-        borderColor: "grey",
+        borderColor: "#dedede",
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
-        borderColor: "transparent transparent grey grey",
+        borderColor: "transparent transparent #dedede #dedede",
       },
     },
   },
@@ -74,12 +75,13 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
     fontSize: "1.8rem",
-    color: "#dedede",
-    background: "grey",
+    color: "#000000",
+    background: "#dedede",
     lineHeight: 1,
     padding: "0.5rem 1rem",
     borderRadius: 50,
     border: 'none',
+    userSelect: "none",
     "&:before": {
       display: "none",
     },
@@ -96,20 +98,42 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: "#000000",
+    color: "#dedede",
     padding: "3rem 0",
     textTransform: "uppercase",
+    userSelect: "none"
   },
   subHeading: {
-    color: "#000000",
+    color: "#dedede",
     padding: 0,
     textTransform: "uppercase",
+    userSelect: "none"
   },
   body1: {
-    color: "#000000",
+    color: "red",
+    textAlign: "center",
+    zIndex: 1,
+    height: 100,
+    userSelect: "none",
+    fontSize: 15
+  },
+  body2: {
+    color: "red",
+    textAlign: "center",
+    zIndex: 1,
+    height: 210,
+    userSelect: "none"
+  },
+  body3: {
+    color: "red",
+    textAlign: "center",
+    zIndex: 1,
+    height: 250,
+    userSelect: "none"
   },
   subtitle1: {
-    color: "#000000",
+    color: "#dedede",
+    userSelect: "none"
   },
 }));
 
@@ -136,35 +160,27 @@ const Resume = () => {
             Ultimate Web Designer & Developer Course:
             Design, Front & Back-End Programming
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Skills:
-          </Typography>
           <Typography
             variant="subtitle1"
             align="center"
-            className={classes.subtitle1}
-          >
-            <Typed
-              strings={[
-                "PHOTOSHOP, HTML5, CSS3",
-              ]}
-              typeSpeed={30}
-            />
-            <br />
-            <Typed
-              strings={[
-                "JAVASCRIPT, PHP, MySQL",
-              ]}
-              typeSpeed={30}
-            />
-            <br />
-            <Typed
-              strings={[
-                "AngularJS basics",
-              ]}
-              typeSpeed={30}
-            />
+            className={classes.subtitle1}>
+            Technologies:
           </Typography>
+          <Typist
+            className={classes.body1}
+            avgTypingDelay={30}
+          >
+            <Typist.Delay ms={500} />
+            <span>Photoshop</span>
+            <br />
+            <span>HTML5, CSS3</span>
+            <br />
+            <span>JavaScript</span>
+            <br />
+            <span>PHP, MySQL</span>
+            <br />
+            <span>AngularJS (basics)</span>
+          </Typist>
         </Box>
         <Typography
           variant="h2"
@@ -180,49 +196,40 @@ const Resume = () => {
           >
             Front End Advanced Course
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Skills:
-          </Typography>
+
           <Typography
             variant="subtitle1"
             align="center"
-            className={classes.subtitle1}
-          >
-            <Typed
-              strings={[
-                "Project management fundamentals, Teamwork, Agile",
-              ]}
-              typeSpeed={30}
-            />
-            <br />
-            <Typed
-              strings={[
-                "Advanced HTML, Advanced CSS, Responsive design",
-              ]}
-              typeSpeed={30}
-            />
-            <br />
-            <Typed
-              strings={[
-                "Advanced JavaScript, Node.Js, Express.Js & NoSQL",
-              ]}
-              typeSpeed={30}
-            />
-            <br />
-            <Typed
-              strings={[
-                "JavaScript and Browser: Document, Event, Interfaces, Debugging, API, FireBase, GIT.",
-              ]}
-              typeSpeed={30}
-            />
-            <br />
-            <Typed
-              strings={[
-                "Application testing, Error handling",
-              ]}
-              typeSpeed={30}
-            />
+            className={classes.subtitle1}>
+            Technologies:
           </Typography>
+          <Typist
+            className={classes.body2}
+            avgTypingDelay={30}
+          >
+            <Typist.Delay ms={500} />
+            <span>Teamwork, Agile</span>
+            <br />
+            <span>Project management</span>
+            <br />
+            <span>HTML5, CSS3</span>
+            <br />
+            <span>Responsive design.</span>
+            <br />
+            <span>Advanced JavaScript</span>
+            <br />
+            <span>React</span>
+            <br />
+            <span>Node, Express, NoSQL.</span>
+            <br />
+            <span>restfulAPI, FireBase</span>
+            <br />
+            <span>Debugging, GIT</span>
+            <br />
+            <span>Application testing</span>
+            <br />
+            <span>Error handling</span>
+          </Typist>
         </Box>
         <Typography
           variant="h2"
@@ -230,6 +237,7 @@ const Resume = () => {
         >
           2020
         </Typography>
+        {/* haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */}
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="h5"
@@ -238,45 +246,43 @@ const Resume = () => {
           >
             The Complete Web developer: zero to mastery
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Skills:
-          </Typography>
           <Typography
             variant="subtitle1"
             align="center"
-            className={classes.subtitle1}
-          >
-
-            <br />
-            <Typed
-              strings={[
-                "DOM Manipulation, Javascript (including ES6/ES7/ES8/ES9/ES10/ES2020), Asynchronous JavaScript,HTTP/JSON/AJAX",
-              ]}
-              typeSpeed={30}
-            />
-            <br />
-            <Typed
-              strings={[
-                "React + Redux, Git + Github, Command Line",
-              ]}
-              typeSpeed={30}
-            />
-            <br />
-            <Typed
-              strings={[
-                "Node.js, Express.js, NPM, RESTful API Design, PostgresSQL, SQL",
-              ]}
-              typeSpeed={30}
-            />
-            <br />
-            <Typed
-              strings={[
-                "Authentication, Authorization, Scalable Infrastructure, Security, Production and Deployment",
-              ]}
-              typeSpeed={30}
-            />
-
+            className={classes.subtitle1}>
+            Technologies:
           </Typography>
+          <Typist
+            className={classes.body3}
+            avgTypingDelay={30}
+          >
+            <Typist.Delay ms={500} />
+            <span>DOM Manipulation</span>
+            <br />
+            <span>Asynchronous JavaScript</span>
+            <br />
+            <span>HTTP/JSON/AJAX.</span>
+            <br />
+            <span>React + Redux</span>
+            <br />
+            <span>Git</span>
+            <br />
+            <span>Command Line.</span>
+            <br />
+            <span>Node, Express, NPM</span>
+            <br />
+            <span>restfulAPI Design</span>
+            <br />
+            <span>PostgresSQL, SQL</span>
+            <br />
+            <span>Authentication, Authorization</span>
+            <br />
+            <span>Scalable Infrastructure</span>
+            <br />
+            <span>Security</span>
+            <br />
+            <span>Production and Deployment</span>
+          </Typist>
         </Box>
       </Box>
     </Box>
