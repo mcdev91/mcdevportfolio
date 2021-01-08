@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
   },
 
- arrow: {
+ icon: {
       fill: "#dedede",
       fontSize: 25,
       "&:hover": {
@@ -102,7 +102,7 @@ const Navbar = () => {
         <AppBar position="fixed" className={classes.appbar}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
-              <MenuIcon className={classes.arrow} />
+              <MenuIcon className={classes.icon} />
             </IconButton>
           </Toolbar>
         </AppBar>

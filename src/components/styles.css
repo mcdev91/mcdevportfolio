@@ -1,3 +1,5 @@
+/* resume page */
+
 .react-pdf__Document {
     height: 100vh;
     padding-top: 106px;
@@ -13,8 +15,6 @@
 .react-pdf__Page__textContent {
     display: none;
 }
-
-.react-pdf__Page {}
 
 #downloadLink {
     text-align: center;
@@ -49,4 +49,10 @@ text-decoration: underline;
 
 .react-pdf__Document {
     background-color: #dedede;
+}
+
+/* header page */
+
+.Cursor {
+    display: none;
 }
