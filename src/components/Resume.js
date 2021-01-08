@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
     color: "red",
     textAlign: "center",
     zIndex: 1,
-    height: 100,
+    height: 95,
     userSelect: "none",
     fontSize: 15
   },
