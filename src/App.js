@@ -14,7 +14,7 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: [
       'Nanum Gothic Coding',
-      'cursive',
+      'monospace',
     ].join(','),
   },
 });
