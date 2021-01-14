@@ -22,21 +22,24 @@ const Particles = () => {
             value: "77ff00"
           },
           shape: {
-            type: ''
+            type: 'circle',
+            stroke: {
+              width: 0
+            }
           },
           number: {
-            value: 100,
+            value: 30,
             density: {
               enable: true,
               value_area: 800,
             },
           },
           size: {
-            value: 8,
+            value: 3,
             random: true,
             anim: {
               enable: false,
-              speed: 10,
+              speed: 100,
               size_min: 0,
               sync: true,
             },

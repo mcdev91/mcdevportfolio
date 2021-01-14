@@ -110,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
     userSelect: "none"
   },
   body1: {
-    color: "red",
+    color: "#77ff00",
     textAlign: "center",
     zIndex: 1,
     height: 95,
@@ -118,18 +118,26 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 15
   },
   body2: {
-    color: "red",
+    color: "#77ff00",
     textAlign: "center",
     zIndex: 1,
     height: 210,
     userSelect: "none"
   },
   body3: {
-    color: "red",
+    color: "#77ff00",
     textAlign: "center",
     zIndex: 1,
     height: 250,
     userSelect: "none"
+  },
+  body4: {
+    color: "#77ff00",
+    textAlign: "center",
+    zIndex: 1,
+    height: 11,
+    userSelect: "none",
+    textTransform: "uppercase"
   },
   subtitle1: {
     color: "#dedede",
@@ -237,7 +245,6 @@ const Resume = () => {
         >
           2020
         </Typography>
-        {/* haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */}
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="h5"
@@ -282,6 +289,29 @@ const Resume = () => {
             <span>Security</span>
             <br />
             <span>Production and Deployment</span>
+          </Typist>
+        </Box>
+
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        >
+          2021
+        </Typography>
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Never give up
+          </Typography>
+          <Typist
+            className={classes.body4}
+            avgTypingDelay={30}
+          >
+            <Typist.Delay ms={500} />
+            <span>Improving my skills.</span>
           </Typist>
         </Box>
       </Box>
