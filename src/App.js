@@ -13,7 +13,7 @@ import "./App.css";
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
-      'Chilanka',
+      'Nanum Gothic Coding',
       'cursive',
     ].join(','),
   },

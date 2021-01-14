@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
   listItem: {
     color: "#dedede",
     fontSize: 25,
+    textTransform: 'uppercase',
     "&:hover": {
       color: "white",
     },

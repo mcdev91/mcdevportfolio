@@ -9,14 +9,14 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const useStyles = makeStyles({
   bottomNavContainer: {
     background: "#000000",
-    paddingBottom: 30
+    paddingBottom: 30,
   },
   root: {
     "& .MuiSvgIcon-root": {
       fill: "#dedede",
       "&:hover": {
         fontSize: "2rem",
-        fill: "white"
+        fill: "white",
       },
     },
   },
