@@ -23,24 +23,21 @@ const Particles = () => {
           },
           shape: {
             type: 'circle',
-            stroke: {
-              width: 0
-            }
+          },
+          move: {
+            speed: 2
           },
           number: {
-            value: 30,
+            value: 50,
             density: {
               enable: true,
               value_area: 800,
             },
           },
           size: {
-            value: 3,
+            value: 2,
             random: true,
             anim: {
-              enable: false,
-              speed: 100,
-              size_min: 0,
               sync: true,
             },
           },
