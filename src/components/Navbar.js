@@ -27,13 +27,13 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
   },
 
- icon: {
-      fill: "#dedede",
-      fontSize: 25,
-      "&:hover": {
-        fill: "white",
-      },
+  icon: {
+    fill: "#dedede",
+    fontSize: 25,
+    "&:hover": {
+      fill: "white",
     },
+  },
 
   title: {
     color: "white",
@@ -61,10 +61,10 @@ const useStyles = makeStyles((theme) => ({
 
 const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/" },
-  { listIcon: <Apps />, listText: "Projects", listPath: "/projects" },
   { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
   { listIcon: <PictureAsPdfIcon />, listText: "Full Resume", listPath: "/fullresume" },
-  { listIcon: <ContactMail />, listText: "Hire Me", listPath: "/contact" },
+  { listIcon: <Apps />, listText: "Projects", listPath: "/projects" },
+  { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
 ];
 
 const Navbar = () => {

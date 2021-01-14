@@ -16,8 +16,8 @@ const button = {
   height: 50,
   fontSize: 15,
   padding: '0 20px',
-  boxShadow: '0 0px 5px 5px rgba(0, 0, 0)',
-  borderRadius: 50
+  boxShadow: '0 0px 2px 2px rgba(0, 0, 0)',
+  fontWeight: 'bold'
 };
 
 const useStyles = makeStyles((theme) => ({
@@ -48,7 +48,8 @@ const useStyles = makeStyles((theme) => ({
   contactTag: {
     color: "#000000",
     fontSize: 30,
-    textTransform: "uppercase"
+    textTransform: "uppercase",
+    fontWeight: 'bold'
   },
 }));
 
