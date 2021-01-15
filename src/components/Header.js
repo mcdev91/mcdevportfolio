@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   intro: {
     color: "#dedede",
     fontSize: 25,
-    userSelect: "none"
+    userSelect: "none",
   },
   typedContainer: {
     position: "absolute",
@@ -42,15 +42,15 @@ const Header = () => {
         className={classes.intro}
         avgTypingDelay={30}
       >
-        <span > Hi, I am Martynas Čižas</span>
+        <span> Hi, I am Martynas</span>
         <Typist.Backspace count={23} delay={1000} speed={10} />
-        <span>Full Stack Web Developer</span>
+        <span>Web Developer</span>
         <Typist.Delay ms={1000} />
         <br />
         <span>Technologies I Use:</span>
         <Typist.Delay ms={500} />
         <br />
-        <span>React, Node, Express, PostgreSQL, NPM, SPA, Git</span>
+        <span>React, Node, Express, Git</span>
       </Typist>
     </Box>
   );
